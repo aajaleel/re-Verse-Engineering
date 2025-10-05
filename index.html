@@ -1,48 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>re:Verse Engineering</title>
 
-    <!-- Third Party Plugins -->
-    <link rel="stylesheet" type="text/css" href="css/vendor.css">
-    <!-- Bootstrap CSS -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Montserrat:wght@900&family=Roboto:wght@400;700;900&family=Six+Caps&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@400;700;900&family=Six+Caps&display=swap" rel="stylesheet">
-    <!-- custom style -->
-    <link rel="stylesheet" href="style.css">
 
+    <!-- Vendor + Custom CSS -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body data-bs-theme="dark">
+<!-- 🌸 Mobile Header -->
+<div class="mobile-header d-lg-none">
+  <img src="images/logo.png" alt="re:Verse Logo">
+  <p class="bio">
+developing tailored workshops featuring
+Technology x Poetry x Community
+  </p>
+  <p class="tagline">innovator / storyteller / changemaker</p>
+  <p class="name">AALIYAH JALEEL</p>
+</div>
+
+
+    <!-- 🍔 Mobile Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" class="d-lg-none" />
+    <label for="menu-toggle" class="menu-btn d-lg-none"><span></span></label>
+
+    <!-- 📱 Mobile Sidebar -->
+    <div class="mobile-sidebar d-lg-none">
+      <div class="sidebar p-4 vh-100 d-flex flex-column justify-content-between">
+        <div class="sidebar-logo text-center">
+          <img src="images/logo.png" alt="re:Verse Logo">
+        </div>
+
+        <div class="sidebar-content mt-5 pt-4">
+          <p class="bio">
+            developing tailored workshops featuring
+            Technology x Poetry x Community
+          </p>
+        </div>
+
+        <div class="sidebar-footer d-flex flex-column align-items-start">
+          <div class="social-icons mb-4 d-flex flex-column">
+            <a href="https://www.linkedin.com/in/aaliyahjaleel/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="personal-info">
+            <p class="job-title mb-2">innovator / storyteller / changemaker</p>
+            <p class="location">AALIYAH JALEEL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- 🧭 Desktop Sidebar -->
     <header class="site-header"></header>
-    
     <div class="container-fluid p-0">
       <div class="row g-0">
-        <!-- Sidebar -->
         <div class="col-lg-3 position-fixed z-1 h-100" data-aos="slide-right" data-aos-delay="200">
           <div class="sidebar p-4 p-lg-5 vh-100 d-flex flex-column justify-content-between">
-            
-            <!-- Logo -->
             <div class="sidebar-logo">
-                <img src="images/logo.png" alt="re:Verse Logo">
+              <img src="images/logo.png" alt="re:Verse Logo">
             </div>
-        
-            <!-- Bio -->
+
             <div class="sidebar-content mt-5 pt-4">
-              <p class="bio d-none d-lg-block" style="max-width: 200px; color: #f1c6b6;">
+              <p class="bio" style="max-width: 200px; color: #f1c6b6;">
                 developing + delivering tailored workshops at the intersection of Technology x Poetry x Community
               </p>
             </div>
-            
-            <!-- Socials + Info -->
+
             <div class="sidebar-footer d-flex flex-column align-items-start">
               <div class="social-icons mb-4 d-flex flex-column">
-                <a href="www.linkedin.com/in/aaliyahjaleel/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/aaliyahjaleel/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
@@ -52,19 +94,17 @@
                 <p class="location">AALIYAH JALEEL</p>
               </div>
             </div>
-        
           </div>
-        </div>        
+        </div>
 
+        <!-- 🖼 Main Content -->
         <div class="col-lg-9 offset-lg-3">
           <div class="row">
-            
-            <!-- Hero Section -->
 
-            <div id="intro" class="col-lg-8 position-relative d-flex flex-column align-items-center"> 
+            <!-- HERO -->
+            <div id="intro" class="col-lg-8 position-relative d-flex flex-column align-items-center">
               <div class="pt-4 pt-lg-5 px-4 px-lg-5 w-100 mt-5">
-
-                <div class="swiper banner-slider slide-in mt-5 mt-lg-0 ">
+                <div class="swiper banner-slider slide-in mt-5 mt-lg-0">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="banner-content d-flex flex-column">
@@ -87,7 +127,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <nav class="section-nav swiper banner-nav-slider pt-3 pt-lg-4 px-4 px-lg-5 w-100" data-aos="fade-up" data-aos-delay="600">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide"><span>01</span> WHAT</li>
@@ -95,7 +135,8 @@
                   <li class="swiper-slide"><span>03</span> HOW</li>
                 </ul>
               </nav>
-              <div class="swiper image-slider" data-aos="fade-up" data-aos-delay="1000" >
+
+              <div class="swiper image-slider" data-aos="fade-up" data-aos-delay="1000">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img class="hero-image position-absolute top-0 end-0 img-fluid mb-5 opacity-25 vh-100" src="images/banner-image-1.jpg"></div>
                   <div class="swiper-slide"><img class="hero-image position-absolute top-0 end-0 img-fluid mb-5 opacity-25 vh-100" src="images/banner-image-2.jpg"></div>
@@ -103,8 +144,8 @@
                 </div>
               </div>
             </div>
-            
-            <!-- Skills Sidebar -->
+
+            <!-- RIGHT SIDEBAR DEFINITIONS -->
             <div class="col-lg-4 right-sidebar">
               <div class="p-4 p-lg-5 h-100">
                 <div class="skill" data-aos="fade-up" data-aos-delay="200">
@@ -124,184 +165,135 @@
                 </div>
               </div>
             </div>
-    <!-- Portfolio -->
-<section id="portfolio" class="pt-4 pt-lg-5 px-4 px-lg-5 my-3 py-3">
-  <div class="section-header my-5" data-aos="fade-up">
-    <div class="row g-5">
-      <div class="col-lg-6">
-        <span class="introduction mb-3 d-block">some of my recent works</span>
-        <h2 class="name mb-4 txt-fx slide-up text-uppercase">Portfolio</h2>
-      </div>
-    </div>
-  </div>
 
-  <div class="swiper portfolio-Swiper portfolio-content py-4" data-aos="fade-up">
-    <div class="swiper-wrapper">
-      
-      <!-- Project 1 -->
-      <div class="swiper-slide">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/MzdViUwU-8Q" 
-                  title="TechNova Hackathon" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen></iframe>
-        </div>
-        <div class="caption d-flex justify-content-between align-items-center">
-          <div class="title">TechNova Hackathon @ UWaterloo</div>
-        </div>
-        <p class="activity-desc">
-          Inspired students to write couplet poems using hackathon-themed prompts.
-        </p>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="swiper-slide">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/FCGqJP6sNuw?si=kvFQItiujUaB4D3E" 
-                  title="Theory of Computation" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerpolicy="strict-origin-when-cross-origin" 
-                  allowfullscreen></iframe>
-        </div>
-        <div class="caption d-flex justify-content-between align-items-center">
-          <div class="title">Theory of Computation @ UofT</div>
-        </div>
-        <p class="activity-desc">
-          Challenged students to analyze which haikus were generated by AI vs. human.
-        </p>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="swiper-slide">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/1gWvLHRY2o0?si=Yjp-epJXVnlRxIZy" 
-                  title="TEDxUofTScarborough Project" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerpolicy="strict-origin-when-cross-origin" 
-                  allowfullscreen></iframe>
-        </div>
-        <div class="caption d-flex justify-content-between align-items-center">
-          <div class="title">TEDxUofTScarborough @ UTSC</div>
-          <a class="image-format bg-orange">[Date]</a>
-        </div>
-        <p class="activity-desc">
-          Wrote and animated a spoken word poem to introduce the event theme.
-        </p>
-      </div>
-
-    </div>
-    <div class="swiper-pagination mt-5"></div>
-  </div>
-</section>
-
-           
-<!-- Contact / FAQ -->
-<section id="contact" class="pt-4 px-4 px-lg-5 my-5 py-5">
-  <div class="container-fluid">
-    <span class="introduction mb-3 d-block text-uppercase">FAQ & Inquiries</span>
-
-    <div class="row g-5">
-
-      <!-- FAQ aligned left -->
-      <div class="col-lg-7" data-aos="fade-up">
-        <h3>Frequently Asked Questions</h3>
-        <div class="accordion" id="accordionExample2">
-
-          <!-- FAQ 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse1" aria-expanded="true">
-                Do participants need prior experience with poetry or technology?
-              </button>
-            </h2>
-            <div id="accordion-collapse1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                Not at all! My workshops are designed to be accessible for everyone, regardless of background. 
-                I provide step-by-step guidance, interactive prompts, and flexible activities that allow both 
-                beginners and experienced participants to engage fully. 
+            <!-- PORTFOLIO -->
+            <section id="portfolio" class="pt-4 pt-lg-5 px-4 px-lg-5 my-3 py-3">
+              <div class="section-header my-5" data-aos="fade-up">
+                <div class="row g-5">
+                  <div class="col-lg-6">
+                    <span class="introduction mb-3 d-block">some of my recent works</span>
+                    <h2 class="name mb-4 txt-fx slide-up text-uppercase">PORTFOLIO</h2>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+              <div class="swiper portfolio-Swiper portfolio-content py-4" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="video-container">
+                      <iframe src="https://www.youtube.com/embed/MzdViUwU-8Q" title="TechNova Hackathon" allowfullscreen></iframe>
+                    </div>
+                    <div class="caption d-flex justify-content-between align-items-center">
+                      <div class="title">TechNova Hackathon @ UWaterloo</div>
+                    </div>
+                    <p class="activity-desc">Inspired students to write couplet poems using hackathon-themed prompts.</p>
+                  </div>
 
-          <!-- FAQ 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse2">
-                How will you tailor the workshop to my community?
-              </button>
-            </h2>
-            <div id="accordion-collapse2" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                I begin by researching your organization and participants to understand context, needs, and accessibility. 
-                From there, I consult closely with your liaison to align 
-                with deeper cultural context, logistical constraints, and what will resonate most with your audience.
+                  <div class="swiper-slide">
+                    <div class="video-container">
+                      <iframe src="https://www.youtube.com/embed/FCGqJP6sNuw" title="Theory of Computation" allowfullscreen></iframe>
+                    </div>
+                    <div class="caption d-flex justify-content-between align-items-center">
+                      <div class="title">Theory of Computation @ UofT</div>
+                    </div>
+                    <p class="activity-desc">Challenged students to analyze which haikus were generated by AI vs. human.</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="video-container">
+                      <iframe src="https://www.youtube.com/embed/1gWvLHRY2o0" title="TEDxUofTScarborough Project" allowfullscreen></iframe>
+                    </div>
+                    <div class="caption d-flex justify-content-between align-items-center">
+                      <div class="title">TEDxUofTScarborough @ UTSC</div>
+                      <a class="image-format bg-orange">[Date]</a>
+                    </div>
+                    <p class="activity-desc">Wrote and animated a spoken word poem to introduce the event theme.</p>
+                  </div>
+                </div>
+                <div class="swiper-pagination mt-5"></div>
               </div>
-            </div>
-          </div>
+            </section>
 
-          <!-- FAQ 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse3">
-                What outcomes can we expect from the workshop?
-              </button>
-            </h2>
-            <div id="accordion-collapse3" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                Participants walk away with new skills in creative expression, confidence in using technology 
-                for storytelling, and a deeper sense of community. This could 
-                look like collaborative poems, interactive digital art, or simply stronger connections between 
-                people who rarely create together.
+            <!-- FAQ + INQUIRY -->
+            <section id="contact" class="pt-4 px-4 px-lg-5 my-5 py-5">
+              <div class="container-fluid">
+                <span class="introduction mb-3 d-block text-uppercase">FAQ & Inquiries</span>
+                <div class="row g-5">
+                  <div class="col-lg-7" data-aos="fade-up">
+                    <h3>FREQUENTLY ASKED QUESTIONS</h3>
+                    <div class="accordion" id="accordionExample2">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse1" aria-expanded="true">
+                            Do participants need prior experience with poetry or technology?
+                          </button>
+                        </h2>
+                        <div id="accordion-collapse1" class="accordion-collapse collapse show">
+                          <div class="accordion-body">
+                            Not at all! My workshops are designed to be accessible for everyone, regardless of background.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse2">
+                            How will you tailor the workshop to my community?
+                          </button>
+                        </h2>
+                        <div id="accordion-collapse2" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                            I begin by researching your organization and participants to understand context, needs, and accessibility.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse3">
+                            What outcomes can we expect from the workshop?
+                          </button>
+                        </h2>
+                        <div id="accordion-collapse3" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                            Participants walk away with creative expression skills, confidence using technology for storytelling, and a sense of connection.
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse4">
+                            What about cost, timing, and logistics?
+                          </button>
+                        </h2>
+                        <div id="accordion-collapse4" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                            All workshops are free of charge during my first developmental year. Timing is flexible between 30 minutes–3 hours.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-5" data-aos="fade-up">
+                    <h3>Think your community would benefit from a workshop?</h3>
+                    <form id="form" class="form-group mt-4">
+                      <div class="pb-2"><input type="text" name="name" placeholder="Name" class="form-control"></div>
+                      <div class="pb-2"><input type="text" name="organization" placeholder="Organization" class="form-control"></div>
+                      <div class="pb-2"><input type="email" name="email" placeholder="Email Address" class="form-control"></div>
+                      <div class="pb-2"><textarea placeholder="Your Message" rows="6" class="form-control"></textarea></div>
+                      <button type="submit" class="btn btn-dark w-100 btn-rounded">Submit</button>
+                    </form>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            </section>
 
-          <!-- FAQ 4 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse4">
-                What about cost, timing, and logistics?
-              </button>
-            </h2>
-            <div id="accordion-collapse4" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                All workshops are free of charge during my first developmental year. 
-                Timing is flexible, ranging from 30 minutes to 3 hours depending on your audience’s needs and the space available. 
-                I provide the materials and technologies, tailoring them to the poetic and technical background of participants. 
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Inquiry Form aligned right -->
-      <div class="col-lg-5" data-aos="fade-up">
-        <h3>Think your community would benefit from a workshop? Share your inquiry below!</h3>
-        <form id="form" class="form-group mt-4">
-          <div class="pb-2"><input type="text" name="name" placeholder="Name" class="form-control"></div>
-          <div class="pb-2"><input type="text" name="organization" placeholder="Organization" class="form-control"></div>
-          <div class="pb-2"><input type="email" name="email" placeholder="Email Address" class="form-control"></div>
-          <div class="pb-2"><textarea placeholder="Your Message" rows="6" class="form-control"></textarea></div>
-          <button type="submit" class="btn btn-dark w-100 btn-rounded">Submit</button>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</section>
-   
-            <!-- Experience Section -->
+            <!-- ABOUT / EXPERIENCE -->
             <section id="about" class="pt-4 pt-lg-5 px-4 px-lg-5 my-3 py-3">
               <div class="row d-flex flex-wrap" data-aos="fade-up">
-                <span class="introduction mb-3 d-block text-uppercase" style="color:#a94442;">
-                  Experience
-                </span>
-                
-                <!-- Technology -->
+                <span class="introduction mb-3 d-block text-uppercase" style="color:#a94442;">Experience</span>
+
                 <div class="col-lg-6 pb-5">
                   <h2 class="name mb-4 txt-fx slide-up text-uppercase">Technology</h2>
                   <div class="data-info py-3"><span class="meta-date">2021 - 2026</span><h3>BSc Computer Science</h3><p>University of Toronto</p></div>
@@ -311,7 +303,6 @@
                   <div class="data-info py-3"><span class="meta-date">2022</span><h3>Technical Specialist</h3><p>Apple</p></div>
                 </div>
 
-                <!-- Community + Poetry stacked -->
                 <div class="col-lg-6 pb-5">
                   <h2 class="name mb-4 txt-fx slide-up text-uppercase">Community</h2>
                   <div class="data-info py-3"><span class="meta-date">2025</span><h3>President</h3><p>Serendib Youth Canada</p></div>
@@ -324,8 +315,18 @@
               </div>
             </section>
 
-            
-            
+            <!-- FOOTER -->
+            <footer class="site-footer text-center py-4" style="background-color:#5b0000; color:#f1c6b6;">
+              <div class="container">
+                <p class="mb-1">&copy; 2025 re:Verse Engineering</p>
+                <p class="mb-0">
+                  <a href="https://reverse-engineering.com" target="_blank" style="color:#f1c6b6; text-decoration:none;">
+                    reverse-engineering.com
+                  </a>
+                </p>
+              </div>
+            </footer>
+
           </div>
         </div>
       </div>
@@ -336,26 +337,5 @@
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
-    <!-- Footer -->
-<footer class="site-footer text-center py-4" style="background-color:#5b0000; color:#f1c6b6;">
-  <div class="container">
-    <p class="mb-1">&copy; 2025 re:Verse Engineering</p>
-    <p class="mb-0">
-      <!-- <a href="mailto:workshop@reverse-engineering.com" style="color:#f1c6b6; text-decoration:none;">
-        workshop@reverse-engineering.com
-      </a> 
-      ·  -->
-      <a href="https://reverse-engineering.com" target="_blank" style="color:#f1c6b6; text-decoration:none;">
-        reverse-engineering.com
-      </a>
-    </p>
-    <!-- <div class="mt-2">
-      <a href="www.linkedin.com/in/aaliyahjaleel" class="mx-2" style="color:#f1c6b6;"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#" class="mx-2" style="color:#f1c6b6;"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="mx-2" style="color:#f1c6b6;"><i class="fab fa-twitter"></i></a>
-    </div> -->
-  </div>
-</footer>
-
   </body>
 </html>
